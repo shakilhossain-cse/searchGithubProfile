@@ -26,10 +26,12 @@ const displayInfo = data => {
         <h4>Name      : <span class="primary">${data.name}</span></h4>
         <h4>Bio      : <span class="primary">${data.bio}</span></h4>
         <h4>UserName      : <span class="primary">${data.login}</span></h4>
+        <h4>Total Repo      : <span class="primary">${data.public_repos}</span></h4>
         <h4>Followers      : <span class="primary">${data.followers}</span></h4>
         `;
         logo.innerHTML =`<img src="${data.avatar_url}" alt="">`
         ;
+        input.value = '';
     }
 
 }
